@@ -1,0 +1,74 @@
+summaries:
+  Habit Score (Boolean): ((values.filter(value.isTruthy() == true).length / values.length) * 100).round(2) + "%"
+  Filled: values.filter(!value.isType("null")).length
+  Average: values.mean().round()
+filters:
+  and:
+    - file.path.startsWith("Daily Notes")
+    - '!file.ext.containsAny("base", "bak")'
+formulas:
+  group: '[timeCreated.year, "-", timeCreated.month]'
+  todaysArtThumbs: |-
+    if(
+        habit_drewToday == true,
+        if(
+            habit_todaysArt,
+            habit_todaysArt.map(image(value)),
+            image("todaysArtMissing.webp")
+        ),
+        if(
+            file.name == now().format("YYYY-MM-DD"),
+            image("todaysArtGo.webp"),
+            image("todaysArtMissed.webp")
+        )
+    )
+  todaysArtCount: |-
+    if(
+        habit_todaysArt.length == 2,
+        "+ 1 Image",
+        if(
+            habit_todaysArt.length > 2,
+            "+" + (habit_todaysArt.length - 1) + " Images",
+            if(
+                habit_todaysArt.length < 2,
+                ""
+            )
+        )
+    )
+  weekGroup: timeCreated.format("GGGG-[W]WW")
+properties:
+  formula.group:
+    displayName: Month
+  formula.todaysArtCount:
+    displayName: "Additional Images:"
+  formula.weekGroup:
+    displayName: Week
+views:
+  - type: cards
+    name: Today's Art (Week)
+    groupBy:
+      property: formula.weekGroup
+      direction: DESC
+    order:
+      - file.name
+      - formula.todaysArtCount
+      - formula.group
+    sort:
+      - property: file.name
+        direction: DESC
+    image: formula.todaysArtThumbs
+    cardSize: 280
+  - type: cards
+    name: Today's Art (Month)
+    groupBy:
+      property: formula.group
+      direction: DESC
+    order:
+      - file.name
+      - formula.todaysArtCount
+      - formula.weekGroup
+    sort:
+      - property: file.name
+        direction: DESC
+    image: formula.todaysArtThumbs
+    cardSize: 150

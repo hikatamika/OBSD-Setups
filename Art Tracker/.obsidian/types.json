@@ -1,0 +1,10 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "habit_drewToday": "checkbox",
+    "habit_todaysArt": "multitext",
+    "timeCreated": "datetime"
+  }
+}

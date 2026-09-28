@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "cf057161fa50400c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6d2e9af0014a7be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "488b9957ca10c2fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a64f874dc71119f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72bd441465087c85",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Art Tracker.base",
+                "viewName": "Today's Art (Week)"
+              },
+              "icon": "lucide-layout-grid",
+              "title": "Art Tracker"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1174438e67e90b48",
+    "type": "split",
+    "children": [
+      {
+        "id": "683ed4a7c071cbf6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19d74fff8fde6dd1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "695ef6dbb9b04e8c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "708f37753f227ac8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "34d7a5a18e501b49",
+    "type": "split",
+    "children": [
+      {
+        "id": "1064b9b7d1132afe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "17ff778fe35d3955",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a04e85b512d06e8e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "d7da297f5661d96e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "76c84a34de550622",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "81f35b6156be54b9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "488b9957ca10c2fd",
+  "lastOpenFiles": [
+    "Art Tracker.base",
+    "Welcome.md",
+    "Daily Notes/2026-01-07.md",
+    "Daily Notes/2026-01-06.md",
+    "Daily Notes/2026-01-05.md",
+    "Daily Notes/2026-01-04.md",
+    "Daily Notes/2026-01-03.md",
+    "Daily Notes/2026-01-02.md",
+    "Daily Notes/2026-01-01.md",
+    "_src/templates/ArtTrackerDay.md",
+    "_src/attachments/ArtTracker/todaysArtGo.webp",
+    "_src/attachments/ArtTracker/todaysArtMissed.webp",
+    "_src/attachments/ArtTracker/todaysArtMissing.webp",
+    "_src/attachments/ArtTracker",
+    "_src/attachments/New folder",
+    "Art Tracker.base.bak",
+    "_src/attachments/67-2848x4288.webp",
+    "_src/attachments/67-2848x4288.jpg.crdownload",
+    "_src/attachments/57-2448x3264.webp",
+    "_src/attachments/57-2448x3264.jpg.crdownload",
+    "_src/attachments/43-1280x831.webp",
+    "_src/attachments/43-1280x831.jpg.crdownload",
+    "_src/attachments/20-3670x2462.webp",
+    "_src/attachments/20-3670x2462.jpg.crdownload",
+    "_src/attachments/13-2500x1667.webp",
+    "_src/attachments/13-2500x1667.jpg.crdownload",
+    "_src/templates"
+  ]
+}
