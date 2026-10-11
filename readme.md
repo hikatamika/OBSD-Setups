@@ -4,6 +4,8 @@ Handy [Obsidian](https://obsidian.md/) setups that I think others might benefit 
 
 Still making stuff presentable!
 
+For now, [big-green "Code" button → Download ZIP → Extract → Open folder as vault] to use one.
+
 # Trackers
 
 ## [Art Tracker](/Art%20Tracker/)
