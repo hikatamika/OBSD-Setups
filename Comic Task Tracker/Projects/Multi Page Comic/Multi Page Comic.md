@@ -35,6 +35,8 @@ properties:
     displayName: Tones
   note.comic_letter:
     displayName: Letters
+  formula.pageProgress:
+    displayName: Progress
 views:
   - type: table
     name: View
