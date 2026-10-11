@@ -7,7 +7,7 @@ filters:
     - file.path.startsWith("Daily Notes")
     - '!file.ext.containsAny("base", "bak")'
 formulas:
-  group: '[timeCreated.year, "-", timeCreated.month]'
+  month: '[timeCreated.year, "-", timeCreated.month]'
   todaysArtThumbs: |-
     if(
         habit_drewToday == true,
@@ -17,9 +17,13 @@ formulas:
             image("todaysArtMissing.webp")
         ),
         if(
-            file.name == now().format("YYYY-MM-DD"),
+            date(file.name) >= now(),
             image("todaysArtGo.webp"),
-            image("todaysArtMissed.webp")
+            if(
+                file.name == now().format("YYYY-MM-DD"),
+                image("todaysArtGo.webp"),
+                image("todaysArtMissed.webp")
+            )
         )
     )
   todaysArtCount: |-
@@ -37,7 +41,7 @@ formulas:
     )
   weekGroup: timeCreated.format("GGGG-[W]WW")
 properties:
-  formula.group:
+  formula.month:
     displayName: Month
   formula.todaysArtCount:
     displayName: "Additional Images:"
@@ -52,7 +56,7 @@ views:
     order:
       - file.name
       - formula.todaysArtCount
-      - formula.group
+      - formula.month
     sort:
       - property: file.name
         direction: DESC
@@ -61,7 +65,7 @@ views:
   - type: cards
     name: Today's Art (Month)
     groupBy:
-      property: formula.group
+      property: formula.month
       direction: DESC
     order:
       - file.name
