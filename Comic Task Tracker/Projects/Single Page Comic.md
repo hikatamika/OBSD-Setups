@@ -17,7 +17,7 @@ path: "Daily Notes"
 filters:
   - property: log_workedOn
     operator: contains
-    value: Single Page Comic
+    value: "Single Page Comic"
 year: 2026
 separateMonths: true
 showCurrentDayBorder: true

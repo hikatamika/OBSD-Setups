@@ -27,7 +27,7 @@ path: "${dailyNotes}"
 filters:
   - property: log_workedOn
     operator: contains
-    value: ${noteTitle}
+    value: "${noteTitle}"
 year: ${currentYear}
 separateMonths: true
 showCurrentDayBorder: true

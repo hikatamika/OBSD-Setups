@@ -52,7 +52,7 @@ path: "Daily Notes"
 filters:
   - property: log_workedOn
     operator: contains
-    value: Multi Page Comic
+    value: "Multi Page Comic"
 year: 2026
 separateMonths: true
 showCurrentDayBorder: true
