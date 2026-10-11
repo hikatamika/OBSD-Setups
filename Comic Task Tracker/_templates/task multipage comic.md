@@ -60,7 +60,7 @@ const currentYear = tp.date.now("YYYY");
 tR += `\`\`\`heatmap-tracker
 heatmapTitle: Project Activity
 property: log_workedOn
-path: Planner/Dailies
+path: "${dailyNotes}"
 filters:
   - property: log_workedOn
     operator: contains
