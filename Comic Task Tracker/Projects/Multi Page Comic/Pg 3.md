@@ -1,5 +1,5 @@
 ---
-comic_thumb: false
+comic_thumb: true
 comic_board: false
 comic_pencil: false
 comic_ink: false

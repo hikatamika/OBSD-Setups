@@ -1,6 +1,6 @@
 ---
-comic_thumb: false
-comic_board: false
+comic_thumb: true
+comic_board: true
 comic_pencil: false
 comic_ink: false
 comic_tone: false
