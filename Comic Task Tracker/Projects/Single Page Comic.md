@@ -1,8 +1,8 @@
 
 # Details
 
-- [ ] Thumbnail
-- [ ] Board
+- [ ] Thumbnails
+- [ ] Boards
 - [ ] Pencils
 - [ ] Inks
 - [ ] Tones
@@ -13,11 +13,11 @@
 ```heatmap-tracker
 heatmapTitle: Project Activity
 property: log_workedOn
-path: Planner/Dailies
+path: "Daily Notes"
 filters:
   - property: log_workedOn
     operator: contains
-    value: MicroComic - Thinking for Yourself
+    value: Single Page Comic
 year: 2026
 separateMonths: true
 showCurrentDayBorder: true
@@ -32,7 +32,7 @@ intensityConfig:
 ```base
 filters:
   and:
-    - file.folder == "Planner/Dailies"
+    - file.folder == "Daily Notes"
     - file.properties.log_workedOn.contains(this.file)
 formulas:
   dailyNote: date(file.name)
