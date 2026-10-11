@@ -34,6 +34,9 @@ Then, you can make your own comic projects and track them.
 
 # Usage
 
+> [!warning]
+> Ensure _**YOUR**_ obsidian considers `log_workedOn`, or whatever you want to call this property, a `list` property instead of a `text` property, or else the Obsidian calendar base (if you choose to use it) will fail to parse it later.
+
 1. Put the templates in your templates folder. Tell Templater where that is, if you haven't.
 2. If you're making a one-page comic, make a new note and name it after your comic.
 3. If you're making a multipage comic, make a new folder named after your comic, with a note inside sharing the folder's name.
