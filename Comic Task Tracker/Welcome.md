@@ -20,6 +20,7 @@ Then, you can make your own comic projects and track them.
 	- The base that shows you what parts of the comic process you've finished for each page is within an .MD with the same name as its parent folder, that looks for *all other files in that folder* that ***aren't*** itself.
 - [Heatmap Tracker](https://community.obsidian.md/plugins/heatmap-tracker)
 	- Displays the "did I work on this comic today" *heatmap*.
+		- This one requires [Dataview](https://community.obsidian.md/plugins/dataview) to run.
 - [Calendar Bases](https://community.obsidian.md/plugins/calendar-bases)
 	- Displays the "did I work on this comic today" _calendar_.
 	- Soon, Obsidian will have an official Bases Calendar View and this won't be needed.
