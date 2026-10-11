@@ -8,6 +8,20 @@ filters:
   and:
     - file.folder == "Projects/Multi Page Comic"
     - file.path != this
+formulas:
+  pageProgress: |-
+    html(
+      '<progress max="6" value="' +
+      (
+        Number(comic_thumb) +
+        Number(comic_board) +
+        Number(comic_pencil) +
+        Number(comic_ink) +
+        Number(comic_tone) +
+        Number(comic_letter)
+      ) +
+      '"></progress>'
+    )
 properties:
   note.comic_thumb:
     displayName: Thumbnails
@@ -32,6 +46,7 @@ views:
       - comic_ink
       - comic_tone
       - comic_letter
+      - formula.pageProgress
     sort: []
     summaries:
       comic_thumb: Completed
