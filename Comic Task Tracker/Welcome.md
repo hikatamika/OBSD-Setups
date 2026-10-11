@@ -24,7 +24,7 @@ These ones improve functionality and visualizations.
 	- The base that shows you what parts of the comic process you've finished for each page is within an .MD with the same name as its parent folder, that looks for *all other files in that folder* that ***aren't*** itself.
 - [Heatmap Tracker](https://community.obsidian.md/plugins/heatmap-tracker)
 	- Displays the "did I work on this comic today" *heatmap*.
-		- This one requires [Dataview](https://community.obsidian.md/plugins/dataview) to run.
+		- This one requires [Dataview](https://community.obsidian.md/plugins/dataview) to run. Install and enable both if you'd like to have activity heatmaps for your comic work.
 - [Calendar Bases](https://community.obsidian.md/plugins/calendar-bases)
 	- Displays the "did I work on this comic today" _calendar_.
 	- Soon, Obsidian will have an official Bases Calendar View and this won't be needed.
@@ -68,10 +68,10 @@ My Comic/
 ```
 
 4. In your note, run Templater's `insert template` modal (via the command palette, or the ribbon icon, or a shortcut, or…) and choose:
-	- `task onepage comic` for the project tracker file of a one-page comic,
-	- `task multipage comic` for the main project tracker file of a multiple-page comic,
-		- `task comic page` for individual pages within a multiple-page comic folder. The multiple-page-comic project tracker file will read from these.
-	- When running `task onepage comic` or `task multipage comic`, an activity heatmap and calendar are generated specifically to that project, within the project's note.
+	- The `task onepage comic` template to make the note the project tracker file of a one-page comic,
+	- The `task multipage comic` template to make the note the main project tracker file of a multiple-page comic,
+		- The `task comic page` template for individual pages within a multiple-page comic folder. The multiple-page-comic project tracker file will read from these.
+	- When running `task onepage comic` or `task multipage comic`, an activity heatmap and calendar are generated specifically to that project, within the project note itself.
 
 ## Daily Notes
 
