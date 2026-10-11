@@ -10,6 +10,8 @@ connections:
 const thisFolder = tp.file.folder(true);
 
 tR += `\`\`\`base
+summaries:
+  Completed: ((values.filter(value == true).length / values.length) * 100) + "%"
 filters:
   and:
     - file.folder == "${thisFolder}"
