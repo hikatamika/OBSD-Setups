@@ -48,7 +48,7 @@ views:
 ```heatmap-tracker
 heatmapTitle: Project Activity
 property: log_workedOn
-path: Planner/Dailies
+path: "Daily Notes"
 filters:
   - property: log_workedOn
     operator: contains
@@ -67,7 +67,7 @@ intensityConfig:
 ```base
 filters:
   and:
-    - file.folder == "Planner/Dailies"
+    - file.folder == "Daily Notes"
     - file.properties.log_workedOn.contains(this.file)
 formulas:
   dailyNote: date(file.name)
