@@ -1,1 +1,5 @@
+# Local Obsidian Settings
 .obsidian/
+
+# Clutter
+*.bak
